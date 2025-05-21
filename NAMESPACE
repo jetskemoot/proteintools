@@ -3,3 +3,4 @@
 export(analyze_amino_acid)
 export(is_valid_protein)
 export(protein_mass)
+export(translate_dna)

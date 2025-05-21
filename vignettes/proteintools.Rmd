@@ -1,0 +1,77 @@
+---
+title: "Introduction to the proteintools package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{proteintools}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(proteintools)
+```
+
+The proteintools package provides a set of tools for basic analysis of protein and DNA sequences. It is intended for educational and exploratory use in bioinformatics. This package was developed as part of a data science for biology 2 portfolio project at Hogeschool Utrecht.
+
+The package currently includes the following functions:
+
+`protein_mass()` – Calculate the molecular mass of a protein sequence.     
+`is_valid_protein()` –  Check if a sequence contains only valid amino acids.     
+`analyze_amino_acid()` – Analyze amino acid in protein sequence.     
+`translate_dna()` – Translate a DNA sequence to a protein.      
+      
+## Protein mass
+
+You can calculate the mass of a protein sequence using the protein_mass() function.
+
+```{r}
+
+protein_mass("MKT")
+
+```
+
+## Valid protein
+
+Check whether a sequence contains only valid amino acids.
+
+```{r}
+
+is_valid_protein("MKTWSSYF")
+is_valid_protein("X")
+
+```
+
+
+## Analyse amino acids
+
+Count the number of a provided amino acid and returns the location(s).
+
+```{r}
+
+analyze_amino_acid("MKTWSSYF", "S")
+
+```
+
+
+## DNA Translation
+
+Translate a DNA sequence to a protein.
+
+```{r}
+
+translate_dna("ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG")
+
+```
+       
+       
+       
+# Conclusion
+
+This vignette introduced the basics of the proteintools package. The package is designed to make protein related tasks easier. For more details, see the GitHub repository.
