@@ -5,8 +5,7 @@ Authors@R:
     person("Jetske", "Moot", , "jetskemoot@github.com", role = c("aut", "cre"))
 Description: Provides basic and accessible functions for protein sequence
     analysis, including calculation of protein mass, valid protein check,
-    translation of DNA sequences into RNA sequences, and translation of DNA 
-    sequences into protein sequences.
+    analyzing amino acids, and translation of DNA sequences into protein sequences.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
