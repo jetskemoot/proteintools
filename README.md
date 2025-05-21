@@ -25,7 +25,8 @@ pak::pak("jetskemoot/proteintools")
 
 The package currently includes the following functions:
 
-`protein_mass()` – Calculate the molecular mass of a protein sequence.
+`protein_mass()` – Calculate the molecular mass of a protein sequence.  
 `is_valid_protein()` – Check if a sequence contains only valid amino
-acids. `analyze_amino_acid()` – Analyze amino acid in protein sequence.
+acids.  
+`analyze_amino_acid()` – Analyze amino acid in protein sequence.  
 `translate_dna()` – Translate a DNA sequence to a protein.
